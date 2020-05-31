@@ -6,7 +6,7 @@ import { Divider, Button, Icon } from "semantic-ui-react";
 
 const Container = styled.div`
     display: flex;
-    height: 60vh;
+    height: 80vh;
     width:100%;
     @media (max-width: 768px) {
         display: block;
@@ -15,7 +15,11 @@ const Container = styled.div`
       }
 ` 
 const Image = styled.img`
-    width: 100%;
+    width: 80%;
+    margin: 140px 30px;
+    @media (max-width: 768px) {
+        margin: 0px 10px 0px 50px;
+      }
 `
 
 const Logo = styled.img`
@@ -31,11 +35,12 @@ const LeftContainer = styled.div`
     height: 100%;
     font-size: 30px;
     text-align: left;
-    padding: 50px 50px;
+    padding: 150px 50px;
     @media (max-width: 768px) {
         width: 100%;
         height: 50vh;
         font-size: 20px;
+        padding: 50px 50px;
       }
 `
 
@@ -57,16 +62,16 @@ class Navbar extends React.Component{
                     <LeftContainer>
                         <Logo src={logo} className="my-logo" />
                         <Divider hidden />
-                        <Button color='linkedin' href="https://www.linkedin.com/in/nikola-raicic-9b6424195/">
-                            <Icon name='linkedin' /> LinkedIn
-                        </Button>
                         <Divider hidden />
                         Full Stack Software Developer
                         <Divider hidden/>
                         <h3>I write clean and easy to read code.</h3>
                         <Divider hidden />
-                        <Button fluid color="twitter">
+                        <Button color="twitter">
                             <Icon name="envelope outline"/> Contact
+                        </Button>
+                        <Button color='linkedin' href="https://www.linkedin.com/in/nikola-raicic-9b6424195/">
+                            <Icon name='linkedin' /> LinkedIn
                         </Button>
                     </LeftContainer>
                     <RightContainer>

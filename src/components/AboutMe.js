@@ -22,8 +22,7 @@ const LeftContainer = styled.div`
     background-color: #008080;
     color: #FFFFFF;
     text-align: left;
-    padding-top: 160px;
-    padding-left: 20px;
+    padding: 90px 50px;
     @media (max-width: 768px) {
         width: 100%;
         height: 50vh;
@@ -42,7 +41,7 @@ const RightConatiner = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         height: 50vh;
-        padding: 0px 50px
+        padding: 0px 50px;
       }
 `
 
@@ -54,8 +53,10 @@ const Header = styled.div`
     font-size: 300%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-color: #FFFFFF;
+    margin-top: 60px;
     @media (max-width: 768px) {
-        font-size: 200%;
+        font-size: 180%;
+        margin-top: 10px;
       }
     
 `
