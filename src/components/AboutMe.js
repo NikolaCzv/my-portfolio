@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import myPhoto from "../assets/myPhoto.jpg";
-import { Divider } from "semantic-ui-react"
+import { Divider } from "semantic-ui-react";
 
 const Container = styled.div`
     display: flex;
