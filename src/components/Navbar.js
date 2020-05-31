@@ -65,7 +65,9 @@ class Navbar extends React.Component{
                         <Divider hidden/>
                         <h3>I write clean and easy to read code.</h3>
                         <Divider hidden />
-                        <Button fluid color="twitter"> <Icon name="envelope outline" /> Contact</Button>
+                        <Button fluid color="twitter">
+                            <Icon name="envelope outline"/> Contact
+                        </Button>
                     </LeftContainer>
                     <RightContainer>
                         <Image src={prog} />
