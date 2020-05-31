@@ -3,7 +3,6 @@ import prog from "../assets/prog.png";
 import logo from "../assets/logo.jpg";
 import styled from "styled-components";
 import { Divider, Button, Icon } from "semantic-ui-react";
-g
 
 const Container = styled.div`
     display: flex;
