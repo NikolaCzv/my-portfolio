@@ -4,8 +4,14 @@ import myPhoto from "../assets/myPhoto.jpg";
 import { Divider } from "semantic-ui-react"
 
 const Container = styled.div`
+    display: flex;
     height: 50vh;
     width: 100%;
+    @media (max-width: 768px) {
+        display: block;
+        align-items: center;
+        height: 50vh;
+      }
 `
 
 const LeftContainer = styled.div`
@@ -18,6 +24,11 @@ const LeftContainer = styled.div`
     text-align: left;
     padding-top: 160px;
     padding-left: 20px;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 50vh;
+        padding: 50px;
+      }
 }
 `
 
@@ -27,24 +38,35 @@ const RightConatiner = styled.div`
     width: 50%;
     height: 100%;
     background-color: #000000;
+    padding: 0px 200px;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 50vh;
+        padding: 0px 50px
+      }
 `
 
 const Image = styled.img`
     height: 100%;
-    transform: translate(100%, 0%);
-    -ms-transform: translate(-50%, -50%);
 `
 
 const Header = styled.div`
     font-size: 300%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-color: #FFFFFF;
+    @media (max-width: 768px) {
+        font-size: 200%;
+      }
+    
 `
 
 const Text = styled.div`
     font-size: 150%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 1.5px;
+    @media (max-width: 768px) {
+        font-size: 100%;
+      }
 `
 
 class AboutMe extends React.Component{
