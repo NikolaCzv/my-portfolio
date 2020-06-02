@@ -19,7 +19,7 @@ const LeftContainer = styled.div`
     float: left;
     width: 50%;
     height: 100%;
-    background-color: #008080;
+    background-color: #65CAAB;
     color: #FFFFFF;
     text-align: left;
     padding: 90px 50px;
