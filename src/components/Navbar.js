@@ -76,6 +76,13 @@ const RightContainer = styled.div`
       }
 `
 
+const ButtonWrapper = styled.div`
+    @media (max-width: 768px) {
+        display: grid;
+        grid-gap: 5px;
+    }
+`
+
 class Navbar extends React.Component{
 
     render(){
@@ -89,18 +96,30 @@ class Navbar extends React.Component{
                         <Divider hidden/>
                         <h3 className="write">I write clean and easy to read code.</h3>
                         <Divider hidden />
+                        <ButtonWrapper>
                         <Button
                             color="twitter"
-                            href="mailto:nikola.raicic@hotmail.com">
+                            href="mailto:nikola.raicic@hotmail.com"
+                            size="small">
                             <Icon name="envelope outline"/>
                             Contact
                         </Button>
                         <Button
                             color='linkedin'
-                            href="https://www.linkedin.com/in/nikola-raicic-9b6424195/">
+                            href="https://www.linkedin.com/in/nikola-raicic-9b6424195/"
+                            size="small">
                             <Icon name='linkedin' />
                             LinkedIn
                         </Button>
+                        <Button
+                            color="black"
+                            size="small"
+                            href="https://github.com/NikolaCzv">
+                                <Icon name="github" />
+                                GitHub
+                        </Button>
+                        </ButtonWrapper>
+                        <Divider hidden />
                         <Divider hidden />
                     </LeftContainer>
                     <RightContainer>

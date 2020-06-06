@@ -37,6 +37,9 @@
       .write{
         font-size: 60%;
       }
+      .be-card:hover{
+        
+      }
 }
 
 @keyframes typing {
