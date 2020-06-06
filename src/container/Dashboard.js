@@ -5,6 +5,8 @@ import Skills from "../components/Skills"
 import styled from "styled-components";
 
 const Container = styled.div`
+    display: block;
+    
 `
 
 

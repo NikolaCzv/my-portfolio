@@ -17,6 +17,11 @@ const Container = styled.div`
         padding: 40px;
         margin-top: 690px;
       }
+    @media (max-width: 320px) {
+        display: block;
+        padding: 10px;
+        margin-top: 600px;
+    }
 `
 
 const CardWrapper = styled.div`
@@ -29,6 +34,12 @@ const CardWrapper = styled.div`
     @media (max-width: 768px) {
         margin-top: 40px;
       }
+    @media (max-width: 425px){
+        margin-left: 20px;
+    }
+    @media (max-width: 375px){
+        margin-left: 0px;
+    }
 `
 
 const Card = styled.div`
@@ -49,7 +60,7 @@ class Skills extends React.Component {
     render(){
         return(
             <Container>
-                <CardWrapper>
+                <CardWrapper className="be-card">
                     <Card>
                         <Header>Back End</Header>
                         <Divider />
@@ -59,11 +70,11 @@ class Skills extends React.Component {
                             <ul>
                                 <li>Ruby on Rails</li>
                                 <li>Active Records</li>
-                                <li>SQL</li>
+                                <li>SQL, PostgreSQL</li>
                             </ul>
                     </Card>
                 </CardWrapper>
-                <CardWrapper>
+                <CardWrapper className="fe-card">
                     <Card>
                         <Header>Front End</Header>
                         <Divider />

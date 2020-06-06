@@ -28,6 +28,10 @@ const LeftContainer = styled.div`
         height: 50vh;
         padding: 50px;
       }
+      @media (max-width: 320px) {
+        width: 100%;
+        height: 80vh;
+    }
 }
 `
 
@@ -43,6 +47,9 @@ const RightConatiner = styled.div`
         height: 50vh;
         padding: 0px 50px;
       }
+    @media (max-width: 320px){
+        height: 70vh;
+    }
 `
 
 const Image = styled.img`
@@ -58,6 +65,9 @@ const Header = styled.div`
         font-size: 180%;
         margin-top: 10px;
       }
+      @media (max-width: 320px){
+        font-size: 155%;
+    }
     
 `
 
@@ -68,13 +78,15 @@ const Text = styled.div`
     @media (max-width: 768px) {
         font-size: 100%;
       }
+    @media (max-width: 320px){
+    }
 `
 
 class AboutMe extends React.Component{
     render(){
         return(
             <Container>
-                <LeftContainer>
+                <LeftContainer className="about-me-left">
                     <Header>Few things about me...</Header>
                     < Divider hidden />
                     < Divider hidden />

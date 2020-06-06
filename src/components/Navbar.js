@@ -17,6 +17,10 @@ const Container = styled.div`
         align-items: center;
         height: 50vh;
       }
+      @media (max-width: 320px) {
+        display: block;
+        height: 100vh;
+    }
 ` 
 const Image = styled.img`
     width: 80%;
@@ -24,6 +28,10 @@ const Image = styled.img`
     @media (max-width: 768px) {
         margin: 0px 10px 0px 50px;
       }
+      @media (max-width: 320px) {
+        width: 50%;
+        margin: 120px 80px;
+    }
 `
 
 const Logo = styled.img`
@@ -31,6 +39,9 @@ const Logo = styled.img`
     @media (max-width: 768px) {
         width: 20%;
       }
+      @media (max-width: 320px) {
+        width: 20%;
+    }
 `
 
 const LeftContainer = styled.div`
@@ -46,6 +57,13 @@ const LeftContainer = styled.div`
         font-size: 20px;
         padding: 50px 50px;
       }
+    @media (max-width: 320px) {
+        width: 100%;
+        height: 50vh;
+        font-size: 16px;
+        padding: 50px 40px;
+    }
+      
 `
 
 const RightContainer = styled.div`
@@ -69,7 +87,7 @@ class Navbar extends React.Component{
                         <Divider hidden />
                         Full Stack Software Developer
                         <Divider hidden/>
-                        <h3>I write clean and easy to read code.</h3>
+                        <h3 className="write">I write clean and easy to read code.</h3>
                         <Divider hidden />
                         <Button
                             color="twitter"
