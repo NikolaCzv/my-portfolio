@@ -6,6 +6,7 @@
   margin: 0px 0px 30px;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .my-logo {
     animation: My-logo-spin infinite 10s linear;
@@ -38,7 +39,7 @@
         font-size: 60%;
       }
       .be-card:hover{
-        
+
       }
 }
 

@@ -1,21 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import ruby from "../assets/ruby.png";
-import react from "../assets/react.png";
 import { Divider } from "semantic-ui-react";
 
 const Container = styled.div`
     display: flex;
     width: 100%;
     height: 70vh;
+    background-color: #65CAAB;
     align-items: center;
     justify-content: space-between;
-    padding: 400px;
+    padding: 300px;
     @media (max-width: 768px) {
         display: block;
-        height: 70vh;
+        height: 215vh;
         padding: 40px;
-        margin-top: 760px;
+        margin-top: 690px;
       }
     @media (max-width: 320px) {
         display: block;
@@ -25,12 +24,13 @@ const Container = styled.div`
 `
 
 const CardWrapper = styled.div`
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     border-radius: 5px;
     border: 1px solid rgb(182, 187, 189);
     width: 300px;
     height: 500px;
+    background-color: #FFFFFF;
     @media (max-width: 768px) {
         margin-top: 40px;
       }
@@ -52,42 +52,29 @@ const Image = styled.img`
       height: 30%;
 `
 const Header = styled.h1`
-      color: #65CAAB;
+      color: #6495ED;
 `
 
-
-class Skills extends React.Component {
+class Projects extends React.Component {
     render(){
         return(
             <Container>
-                <CardWrapper className="be-card">
+                <CardWrapper>
                     <Card>
-                        <Header>Back End</Header>
+                        <Header>Kanban App</Header>
                         <Divider />
-                        <Image src={ruby} />
-                        <h3>Skills</h3>
-                        <Divider />
-                            <ul>
-                                <li>Ruby on Rails</li>
-                                <li>Active Records</li>
-                                <li>SQL, PostgreSQL</li>
-                            </ul>
                     </Card>
                 </CardWrapper>
-                <CardWrapper className="fe-card">
+                <CardWrapper>
                     <Card>
-                        <Header>Front End</Header>
+                        <Header>Travel Smart</Header>
                         <Divider />
-                        <Image src={react} />
-                        <h3>Skills</h3>
+                    </Card>
+                </CardWrapper>
+                <CardWrapper>
+                    <Card>
+                        <Header>Corona Report</Header>
                         <Divider />
-                            <ul className="ul">
-                                <li>HTML</li>
-                                <li>JavaScript, ES5/6 </li>
-                                <li>React, Redux</li>
-                                <li>TypeScript</li>
-                                <li>CSS, Semantic UI, Material UI, Bootstrap, Styled Components</li>
-                            </ul>
                     </Card>
                 </CardWrapper>
             </Container>
@@ -95,4 +82,4 @@ class Skills extends React.Component {
     }
 }
 
-export default Skills;
+export default Projects;
