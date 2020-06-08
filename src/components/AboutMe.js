@@ -25,7 +25,7 @@ const LeftContainer = styled.div`
     padding: 90px 50px;
     @media (max-width: 768px) {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         padding: 50px;
       }
       @media (max-width: 320px) {
@@ -44,7 +44,7 @@ const RightConatiner = styled.div`
     padding: 0px 200px;
     @media (max-width: 768px) {
         width: 100%;
-        height: 60vh;
+        height: 75vh;
         padding: 0px 50px;
       }
     @media (max-width: 320px){
@@ -98,7 +98,7 @@ class AboutMe extends React.Component{
                         I consider myself as a hard worker and a team player.
                     </Text>
                 </LeftContainer>
-                <RightConatiner>
+                <RightConatiner className="aboutRight">
                     <Image src={myPhoto} />
                 </RightConatiner>
             </Container>

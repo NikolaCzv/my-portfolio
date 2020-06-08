@@ -13,10 +13,23 @@ const Container = styled.div`
     padding: 400px;
     @media (max-width: 768px) {
         display: block;
-        height: 70vh;
+        height: 80vh;
         padding: 40px;
-        margin-top: 760px;
+        margin-top: 850px;
       }
+
+    //iphone 7 & 8
+    @media (max-width: 375px) and (max-height : 667px){
+        margin-top: 760px;
+    } 
+
+    //iphone 6+ to 8+
+    @media (max-width: 425px) and and (device-height : 736px) {
+        display: block;
+        height: 80vh;
+        padding: 40px;
+        margin-top: 780px;
+    }
     @media (max-width: 320px) {
         display: block;
         padding: 10px;
@@ -60,7 +73,7 @@ class Skills extends React.Component {
     render(){
         return(
             <Container>
-                <CardWrapper className="be-card">
+                <CardWrapper className="card">
                     <Card>
                         <Header>Back End</Header>
                         <Divider />
@@ -74,7 +87,7 @@ class Skills extends React.Component {
                             </ul>
                     </Card>
                 </CardWrapper>
-                <CardWrapper className="fe-card">
+                <CardWrapper className="card">
                     <Card>
                         <Header>Front End</Header>
                         <Divider />
