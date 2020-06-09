@@ -12,35 +12,26 @@ const Container = styled.div`
     display: flex;
     height: 80vh;
     width:100%;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
         display: block;
+        width: 200%;
         align-items: center;
-        height: 50vh;
-      }
-      @media (max-width: 320px) {
-        display: block;
-        height: 100vh;
+        padding: 10px;
     }
 ` 
 const Image = styled.img`
     width: 80%;
     margin: 140px 30px;
-    @media (max-width: 768px) {
-        margin: 30px 10px 0px 50px;
-      }
-      @media (max-width: 320px) {
-        width: 50%;
-        margin: 120px 80px;
+    @media (max-width: 320px){
+        width: 100%;
+        margin-left: 70px;
     }
 `
 
 const Logo = styled.img`
     width: 7%;
-    @media (max-width: 768px) {
-        width: 20%;
-      }
-      @media (max-width: 320px) {
-        width: 20%;
+    @media (max-width: 320px){
+        width: 15%
     }
 `
 
@@ -51,17 +42,10 @@ const LeftContainer = styled.div`
     font-size: 30px;
     text-align: left;
     padding: 150px 50px;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
+        display: block;
         width: 100%;
-        height: 50vh;
-        font-size: 20px;
-        padding: 50px 50px;
-      }
-    @media (max-width: 320px) {
-        width: 100%;
-        height: 50vh;
-        font-size: 16px;
-        padding: 50px 40px;
+        margin-left: 70px;
     }
       
 `
@@ -70,10 +54,10 @@ const RightContainer = styled.div`
     float: right;
     width: 50%;
     height: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
+        display: block;
         width: 100%;
-        height: 40vh;
-      }
+    }
 `
 
 const ButtonWrapper = styled.div`
@@ -87,8 +71,8 @@ class Navbar extends React.Component{
 
     render(){
         return(
-                <Container>
-                    <LeftContainer>
+                <Container className="navbar-main">
+                    <LeftContainer className="navbar-left">
                         <Logo src={logo} className="my-logo" />
                         <Divider hidden />
                         <Divider hidden />
@@ -122,7 +106,7 @@ class Navbar extends React.Component{
                         <Divider hidden />
                         <Divider hidden />
                     </LeftContainer>
-                    <RightContainer>
+                    <RightContainer className="navbar-right">
                         <Image src={prog} />
                     </RightContainer>
                 </Container>

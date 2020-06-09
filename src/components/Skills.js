@@ -11,29 +11,12 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 400px;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
         display: block;
-        height: 80vh;
-        padding: 40px;
-        margin-top: 850px;
-      }
-
-    //iphone 7 & 8
-    @media (max-width: 375px) and (max-height : 667px){
-        margin-top: 760px;
-    } 
-
-    //iphone 6+ to 8+
-    @media (max-width: 425px) and and (device-height : 736px) {
-        display: block;
-        height: 80vh;
-        padding: 40px;
-        margin-top: 780px;
-    }
-    @media (max-width: 320px) {
-        display: block;
-        padding: 10px;
-        margin-top: 600px;
+        margin-top: 350px;
+        align-items: center;
+        justify-content: center;
+        padding: 250px;
     }
 `
 
@@ -44,20 +27,18 @@ const CardWrapper = styled.div`
     border: 1px solid rgb(182, 187, 189);
     width: 300px;
     height: 500px;
-    @media (max-width: 768px) {
-        margin-top: 40px;
-      }
-    @media (max-width: 425px){
-        margin-left: 20px;
-    }
-    @media (max-width: 375px){
-        margin-left: 0px;
+    @media (max-width: 320px){
+        display: block;
+        margin: 10px 0px 50px 0px
     }
 `
 
 const Card = styled.div`
     padding: 2px 16px;
     height: 120%;
+    @media (max-width: 320px){
+        height: 150%;
+    }
 `
 
 const Image = styled.img`

@@ -7,11 +7,13 @@ const Container = styled.div`
     display: flex;
     height: 50vh;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
         display: block;
+        width: 250%;
+        height: 100vh;
         align-items: center;
-        height: 50vh;
-      }
+        margin-top: 610px;
+    }
 `
 
 const LeftContainer = styled.div`
@@ -23,14 +25,9 @@ const LeftContainer = styled.div`
     color: #FFFFFF;
     text-align: left;
     padding: 90px 50px;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
+        display: block;
         width: 100%;
-        height: 60vh;
-        padding: 50px;
-      }
-      @media (max-width: 320px) {
-        width: 100%;
-        height: 80vh;
     }
 }
 `
@@ -42,13 +39,9 @@ const RightConatiner = styled.div`
     height: 100%;
     background-color: #000000;
     padding: 0px 200px;
-    @media (max-width: 768px) {
-        width: 100%;
-        height: 75vh;
-        padding: 0px 50px;
-      }
     @media (max-width: 320px){
-        height: 70vh;
+        display: block;
+        width: 100%;
     }
 `
 
@@ -61,24 +54,17 @@ const Header = styled.div`
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-color: #FFFFFF;
     margin-top: 60px;
-    @media (max-width: 768px) {
-        font-size: 180%;
-        margin-top: 10px;
-      }
-      @media (max-width: 320px){
-        font-size: 155%;
+    @media (max-width: 320px){
+        margin: 35px;
     }
-    
 `
 
 const Text = styled.div`
     font-size: 150%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 1.5px;
-    @media (max-width: 768px) {
-        font-size: 100%;
-      }
     @media (max-width: 320px){
+     padding: 40px;
     }
 `
 

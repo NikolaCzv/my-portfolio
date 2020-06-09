@@ -35,15 +35,9 @@
         font-size: 60%;
       }
       .card:hover{
-
+        zoom: 1;
       }
 }
-
-@media only screen and (device-width : 375px) and (device-height : 812px){
-    .aboutRight{
-      height: 1000vh;
-    }
-    }
 
 @keyframes typing {
   from { width: 0 }

@@ -13,20 +13,12 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 300px;
-    @media (max-width: 768px) {
+    @media (max-width: 320px){
         display: block;
-        padding: 30px;
-        margin-top: 690px;
-        height: 250vh;
-      }
-
-    @media (max-width: 375px) {
-        height: 280vh;
-    }
-    @media (max-width: 320px) {
-        display: block;
-        padding: 10px;
-        margin-top: 600px;
+        margin-top: 1000px;
+        width: 250%;
+        height: 330vh;
+        padding: 250px;
     }
 `
 
@@ -38,20 +30,18 @@ const CardWrapper = styled.div`
     width: 320px;
     height: 500px;
     background-color: #FFFFFF;
-    @media (max-width: 768px) {
-        margin-top: 40px;
-      }
-    @media (max-width: 425px){
-        margin-left: 20px;
-    }
-    @media (max-width: 375px){
-        margin-left: 0px;
+    @media (max-width: 320px){
+        display: block;
+        margin: -100px 0px 150px 0px;
     }
 `
 
 const Card = styled.div`
     padding: 2px 16px;
     height: 120%;
+    @media (max-width: 320px){
+        margin: 0px
+    }
 `
 
 const Image = styled.img`
