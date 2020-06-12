@@ -46,3 +46,144 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
 }
+
+/* iphone 5s */
+@media screen
+  and (device-aspect-ratio: 40/71){
+
+    /* Navbar */
+  .hacker.hacker{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .navbar-left.navbar-left{
+    display: block;
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+  }
+
+   /* About me */
+  .about-me-left.about-me-left{
+    display: block;
+    width: 110%;
+    height: 100vh;
+    font-size: 10px;
+  }
+  .about-me-header.about-me-header{
+    font-size: 20px;
+  }
+  .about-me-right.about-me-right{
+    display: block;
+    width: 100%;
+  }
+
+  /* Projects */
+    .card.card{
+      margin: 10px 0px 30px -10px
+    }
+  .main-projects.main-projects{
+    width: 110%;
+    height: 350vh
+  }
+}
+
+/* iphone x, xs, 11 pro */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) {
+       /* Navbar */
+      .navbar-left.navbar-left{
+        width: 100%;
+        height: 60vh;
+      }
+      .hacker.hacker{
+        width: 90%;
+      }
+       /* About me */
+      .about-me-left.about-me-left{
+        width: 100%;
+        height: 75vh;
+      }
+      .about-me-right.about-me-right{
+        width: 100%;
+      }
+      .my-photo.my-photo{
+        width: 100%;
+      }
+      /* Project */
+        .card.card{
+          margin: 10px 0px 30px 0px;
+        }
+      .main-projects.main-projects{
+        width: 100%;
+        height: 260vh;
+      }
+    }
+
+   /* iphone XS Max, 11 Pro Max */
+    @media only screen
+      and (min-device-width : 414px)
+      and (max-device-height : 896px) {
+         /* Navbar */
+        .navbar-main.navbar-main{
+          display: block;
+          align-items: center;
+          padding: 0px;
+          margin-top: -100px;
+        }
+        .navbar-left.navbar-left{
+          width: 100%;
+          height: 50vh;
+          font-size: 20px;
+        }
+        .my-logo.my-logo{
+          width: 15%;
+        }
+        .navbar-right.navbar-right{
+          width: 100%;
+          height: 70vh;
+        }
+        .hacker.hacker{
+          width: 80%;
+        }
+         /* About me */
+        .about-me-main.about-me-main{
+          margin-top: 200px;
+          display: block;
+        }
+        .about-me-left.about-me-left{
+          width: 100%;
+          height: 65vh;
+          font-size: 10px;
+        }
+        .about-me-right.about-me-right{
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+         /* Skills */
+        .main-skills.main-skills{
+          display: block;
+          width: 100%;
+          height: 60vh;
+          margin-top: 470px;
+          justify-content: center;
+          align-self: center;
+          padding: 60px;
+        }
+        .card.card{
+          margin: 50px 0px 30px 0px
+        }
+         /* Projects */
+        .main-projects.main-projects{
+          display: block;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 700px;
+          height: 240vh;
+          padding: 55px;
+        }
+      }

@@ -12,12 +12,6 @@ const Container = styled.div`
     display: flex;
     height: 80vh;
     width:100%;
-    @media (max-width: 320px){
-        display: block;
-        width: 200%;
-        align-items: center;
-        padding: 10px;
-    }
     @media (max-width: 375px){
         display: block;
         width: 100%;
@@ -28,10 +22,6 @@ const Container = styled.div`
 const Image = styled.img`
     width: 80%;
     margin: 140px 30px;
-    @media (max-width: 320px){
-        width: 100%;
-        margin-left: 70px;
-    }
     @media (max-width: 375px){
         margin: 10px;
         width: 80%;
@@ -56,11 +46,6 @@ const LeftContainer = styled.div`
     font-size: 30px;
     text-align: left;
     padding: 150px 50px;
-    @media (max-width: 320px){
-        display: block;
-        width: 100%;
-        margin-left: 70px;
-    }
     @media (max-width: 375px){
         display: block;
         font-size: 20px;
@@ -72,14 +57,6 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
     width: 50%;
     height: 100%;
-    @media (max-width: 320px){
-        display: block;
-        width: 100%;
-    }
-    @media (max-width: 320px){
-        width: 100%;
-        align-items: center;
-    }
     @media (max-width: 375px){
         width: 100%;
         align-items: center;
@@ -138,7 +115,7 @@ class Navbar extends React.Component{
                         <Divider hidden />
                     </LeftContainer>
                     <RightContainer className="navbar-right">
-                        <Image src={prog} />
+                        <Image src={prog} className="hacker"/>
                     </RightContainer>
                 </Container>
         );

@@ -32,10 +32,6 @@ const LeftContainer = styled.div`
     color: #FFFFFF;
     text-align: left;
     padding: 90px 50px;
-    @media (max-width: 320px){
-        display: block;
-        width: 100%;
-    }
     @media (max-width: 375px){
         display: block;
         width: 100%;
@@ -50,10 +46,6 @@ const RightConatiner = styled.div`
     height: 100%;
     background-color: #000000;
     padding: 0px 200px;
-    @media (max-width: 320px){
-        display: block;
-        width: 100%;
-    }
     @media (max-width: 375px){
         display: block;
         width: 100%;
@@ -63,6 +55,9 @@ const RightConatiner = styled.div`
 
 const Image = styled.img`
     height: 100%;
+    @media (max-width: 320px){
+        width: 110%;
+    }
 `
 
 const Header = styled.div`
@@ -70,9 +65,6 @@ const Header = styled.div`
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-color: #FFFFFF;
     margin-top: 60px;
-    @media (max-width: 320px){
-        margin: 35px;
-    }
     @media (max-width: 375px){
         margin: 10px;
         font-size: 25px;
@@ -94,9 +86,9 @@ const Text = styled.div`
 class AboutMe extends React.Component{
     render(){
         return(
-            <Container>
+            <Container className="about-me-main">
                 <LeftContainer className="about-me-left">
-                    <Header>Few things about me...</Header>
+                    <Header className="about-me-header">Few things about me...</Header>
                     < Divider hidden />
                     < Divider hidden />
                     < Divider hidden />
@@ -107,8 +99,8 @@ class AboutMe extends React.Component{
                         I consider myself as a hard worker and a team player.
                     </Text>
                 </LeftContainer>
-                <RightConatiner className="aboutRight">
-                    <Image src={myPhoto} />
+                <RightConatiner className="about-me-right">
+                    <Image src={myPhoto} className="my-photo" />
                 </RightConatiner>
             </Container>
         )

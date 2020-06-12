@@ -12,23 +12,16 @@ import travelSmart from "../assets/travelSmart.png"
 const Container = styled.div`
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: #65CAAB;
     align-items: center;
     justify-content: space-between;
     padding: 300px;
-    @media (max-width: 320px){
-        display: block;
-        margin-top: 1000px;
-        width: 250%;
-        height: 340vh;
-        padding: 250px;
-    }
     @media (max-width: 375px){
         display: block;
         margin-top: 1000px;
         width: 100%;
-        height: 280vh;
+        height: 315vh;
         padding: 30px;
     }
 `
@@ -89,7 +82,7 @@ class Projects extends React.Component {
 
     render(){
         return(
-            <Container>
+            <Container className="main-projects">
                 <CardWrapper className="card">
                     <Card>
                         <Header>Kanban App</Header>

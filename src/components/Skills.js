@@ -11,13 +11,6 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 400px;
-    @media (max-width: 320px){
-        display: block;
-        margin-top: 350px;
-        align-items: center;
-        justify-content: center;
-        padding: 250px;
-    }
     @media (max-width: 375px){
         display: block;
         margin-top: 580px;
@@ -34,10 +27,6 @@ const CardWrapper = styled.div`
     border: 1px solid rgb(182, 187, 189);
     width: 300px;
     height: 500px;
-    @media (max-width: 320px){
-        display: block;
-        margin: 10px 0px 50px 0px;
-    }
     @media (max-width: 375px){
         display: block;
         margin: 10px 0px 50px 0px;
@@ -64,7 +53,7 @@ const Header = styled.h1`
 class Skills extends React.Component {
     render(){
         return(
-            <Container>
+            <Container className="main-skills">
                 <CardWrapper className="card">
                     <Card>
                         <Header>Back End</Header>
