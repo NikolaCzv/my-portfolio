@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Divider } from "semantic-ui-react";
+import { 
+    Divider,
+    Button,
+    Icon
+ } from "semantic-ui-react";
 import kanban from "../assets/kanban.png";
 import covid from "../assets/covid.png";
 import travelSmart from "../assets/travelSmart.png"
@@ -35,7 +39,7 @@ const CardWrapper = styled.div`
     border-radius: 5px;
     border: 1px solid rgb(182, 187, 189);
     width: 320px;
-    height: 500px;
+    height: 550px;
     background-color: #FFFFFF;
     @media (max-width: 320px){
         display: block;
@@ -75,6 +79,12 @@ const TextWrapper = styled.div`
     padding: 30px;
 `
 
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 class Projects extends React.Component {
 
     render(){
@@ -92,6 +102,23 @@ class Projects extends React.Component {
                             Safety log in with a token. Ruby on rails on the back end, JavaScript and
                             Redux (thunk) on the front end.
                         </TextWrapper>
+                        <Divider />
+                        <ButtonWrapper>
+                            <Button
+                                color="black"
+                                size="tiny"
+                                href="https://github.com/NikolaCzv/frontendKanban">
+                                    <Icon name="github" />
+                                    Front End
+                            </Button>
+                            <Button
+                                color="black"
+                                size="tiny"
+                                href="https://github.com/NikolaCzv/backendKanban">
+                                    <Icon name="github" />
+                                    Back End
+                            </Button>
+                            </ButtonWrapper>
                     </Card>
                 </CardWrapper>
                 <CardWrapper className="card">
@@ -104,6 +131,25 @@ class Projects extends React.Component {
                             <Divider />
                             Travel Smart App is made for people who like to travel.
                             You can post and share and experience at the same time you can book places from your friends.
+                            <Divider hidden/>
+                            <Divider hidden/>
+                            <Divider />
+                            <ButtonWrapper>
+                            <Button
+                                color="black"
+                                size="tiny"
+                                href="https://github.com/NikolaCzv/frontendMyApp">
+                                    <Icon name="github" />
+                                    Front End
+                            </Button>
+                            <Button
+                                color="black"
+                                size="tiny"
+                                href="https://github.com/NikolaCzv/backendMyApp">
+                                    <Icon name="github" />
+                                    Back End
+                            </Button>
+                            </ButtonWrapper>
                         </TextWrapper>
                     </Card>
                 </CardWrapper>
@@ -119,6 +165,16 @@ class Projects extends React.Component {
                             It is made to collect the data from a patient about
                             COVID-19 and helps doctors to keep track of the patient's symptoms.
                         </TextWrapper>
+                        <Divider />
+                        <ButtonWrapper>
+                        <Button
+                            color="black"
+                            size="tiny"
+                            href="https://github.com/NikolaCzv/coronaApp">
+                            <Icon name="github" />
+                            Front End
+                        </Button>
+                        </ButtonWrapper>
                     </Card>
                 </CardWrapper>
             </Container>
