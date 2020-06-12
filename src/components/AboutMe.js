@@ -14,6 +14,13 @@ const Container = styled.div`
         align-items: center;
         margin-top: 610px;
     }
+    @media (max-width: 375px){
+        display: block;
+        width: 100%;
+        height: 90vh;
+        align-items: center;
+        margin-top: 310px;
+    }
 `
 
 const LeftContainer = styled.div`
@@ -26,6 +33,10 @@ const LeftContainer = styled.div`
     text-align: left;
     padding: 90px 50px;
     @media (max-width: 320px){
+        display: block;
+        width: 100%;
+    }
+    @media (max-width: 375px){
         display: block;
         width: 100%;
     }
@@ -43,6 +54,11 @@ const RightConatiner = styled.div`
         display: block;
         width: 100%;
     }
+    @media (max-width: 375px){
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
 `
 
 const Image = styled.img`
@@ -57,6 +73,10 @@ const Header = styled.div`
     @media (max-width: 320px){
         margin: 35px;
     }
+    @media (max-width: 375px){
+        margin: 10px;
+        font-size: 25px;
+    }
 `
 
 const Text = styled.div`
@@ -65,6 +85,9 @@ const Text = styled.div`
     letter-spacing: 1.5px;
     @media (max-width: 320px){
      padding: 40px;
+    }
+    @media (max-width: 375px){
+        padding: 10px;
     }
 `
 

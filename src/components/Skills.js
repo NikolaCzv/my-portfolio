@@ -18,6 +18,13 @@ const Container = styled.div`
         justify-content: center;
         padding: 250px;
     }
+    @media (max-width: 375px){
+        display: block;
+        margin-top: 580px;
+        width: 100%;
+        height: 25vh;
+        padding: 40px;
+    }
 `
 
 const CardWrapper = styled.div`
@@ -29,7 +36,11 @@ const CardWrapper = styled.div`
     height: 500px;
     @media (max-width: 320px){
         display: block;
-        margin: 10px 0px 50px 0px
+        margin: 10px 0px 50px 0px;
+    }
+    @media (max-width: 375px){
+        display: block;
+        margin: 10px 0px 50px 0px;
     }
 `
 

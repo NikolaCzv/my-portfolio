@@ -17,8 +17,15 @@ const Container = styled.div`
         display: block;
         margin-top: 1000px;
         width: 250%;
-        height: 330vh;
+        height: 340vh;
         padding: 250px;
+    }
+    @media (max-width: 375px){
+        display: block;
+        margin-top: 1000px;
+        width: 100%;
+        height: 280vh;
+        padding: 30px;
     }
 `
 
@@ -33,6 +40,10 @@ const CardWrapper = styled.div`
     @media (max-width: 320px){
         display: block;
         margin: -100px 0px 150px 0px;
+    }
+    @media (max-width: 375px){
+        display: block;
+        margin: 50px 0px 50px 0px;
     }
 `
 

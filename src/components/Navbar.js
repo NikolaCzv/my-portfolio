@@ -18,6 +18,12 @@ const Container = styled.div`
         align-items: center;
         padding: 10px;
     }
+    @media (max-width: 375px){
+        display: block;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
 ` 
 const Image = styled.img`
     width: 80%;
@@ -26,12 +32,20 @@ const Image = styled.img`
         width: 100%;
         margin-left: 70px;
     }
+    @media (max-width: 375px){
+        margin: 10px;
+        width: 80%;
+    }
 `
 
 const Logo = styled.img`
     width: 7%;
     @media (max-width: 320px){
         width: 15%
+    }
+    @media (max-width: 375px){
+        width: 20%;
+        margin-top: 20px;
     }
 `
 
@@ -47,23 +61,40 @@ const LeftContainer = styled.div`
         width: 100%;
         margin-left: 70px;
     }
-      
+    @media (max-width: 375px){
+        display: block;
+        font-size: 20px;
+        padding: 30px;
+        width: 100%;
+    } 
 `
 
 const RightContainer = styled.div`
-    float: right;
     width: 50%;
     height: 100%;
     @media (max-width: 320px){
         display: block;
         width: 100%;
     }
+    @media (max-width: 320px){
+        width: 100%;
+        align-items: center;
+    }
+    @media (max-width: 375px){
+        width: 100%;
+        align-items: center;
+    }
 `
 
 const ButtonWrapper = styled.div`
+    @media (max-width: 375px){
+        width: 100%;
+        align-items: center;
+        margin-top: 70px;
+    }
     @media (max-width: 768px) {
         display: grid;
-        grid-gap: 5px;
+        grid-gap: 10px;
     }
 `
 
