@@ -174,7 +174,8 @@
           padding: 60px;
         }
         .card.card{
-          margin: 50px 0px 30px 0px
+          margin: 50px 0px 30px 0px;
+          height: 530px;
         }
          /* Projects */
         .main-projects.main-projects{
