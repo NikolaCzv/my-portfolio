@@ -175,7 +175,6 @@
         }
         .card.card{
           margin: 50px 0px 30px 0px;
-          height: 530px;
         }
          /* Projects */
         .main-projects.main-projects{
@@ -187,4 +186,13 @@
           height: 240vh;
           padding: 55px;
         }
+        .project-btns.project-btns{
+          margin-bottom: 10px;
+        }
       }
+
+      @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px){
+
+    }

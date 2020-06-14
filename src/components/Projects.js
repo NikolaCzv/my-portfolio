@@ -96,7 +96,7 @@ class Projects extends React.Component {
                             Redux (thunk) on the front end.
                         </TextWrapper>
                         <Divider />
-                        <ButtonWrapper>
+                        <ButtonWrapper className="project-btns">
                             <Button
                                 color="black"
                                 size="tiny"
