@@ -194,5 +194,16 @@
       @media only screen 
     and (device-width : 414px) 
     and (device-height : 736px){
-
+      .main-skills.main-skills{
+        height: 80vh;
+      }
+      .main-projects.main-projects{
+        height: 300vh;
+      }
+      .about-me-left.about-me-left{
+        padding: 35px;
+      }
+      .about-me-right.about-me-right{
+        height: 60vh;
+      }
     }
