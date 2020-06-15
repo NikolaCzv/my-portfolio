@@ -92,7 +92,7 @@ class Projects extends React.Component {
                             <h3>Description</h3>
                             <Divider />
                             Simple Kanban App, where users can create tasks and track the progress.
-                            Safety log in with a token. Ruby on rails on the back end, JavaScript and
+                            Ruby on rails on the back end, JavaScript and
                             Redux (thunk) on the front end.
                         </TextWrapper>
                         <Divider />
@@ -125,7 +125,7 @@ class Projects extends React.Component {
                             Travel Smart App is made for people who like to travel.
                             You can post and share and experience at the same time you can book places from your friends.
                             <Divider hidden/>
-                            <Divider hidden/>
+                            <Divider hidden />
                             <Divider />
                             <ButtonWrapper>
                             <Button
