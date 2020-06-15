@@ -421,3 +421,47 @@
         margin-top: 30px;
       }
     }
+
+    /*Laptop*/
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .navbar-main.navbar-main{
+        display: flex;
+      }
+      .navbar-left.navbar-left{
+        padding: 70px 100px;
+      }
+      .hacker.hacker{
+        width: 80%;
+      }
+
+      .about-me-main.about-me-main{
+        display: flex;
+        height: 65vh;
+      }
+      .about-me-left.about-me-left{
+        width: 50%;
+      }
+      .about-me-right.about-me-right{
+        width: 50%;
+      }
+
+      .main-skills.main-skills{
+        display: flex;
+        padding: 100px;
+        height: 100vh;
+        margin: 0px;
+        justify-content: space-around;
+      }
+      .main-projects.main-projects{
+        display: flex;
+        justify-content: space-around;
+        height: 130vh;
+        margin: 0px;
+      }
+      .card.card{
+        margin: 0px;
+      }
+      .card:hover{
+        margin-bottom: 20px;
+      }
+    }
