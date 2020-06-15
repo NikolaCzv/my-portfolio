@@ -332,3 +332,47 @@
         height: 270vh;
       }
     }
+
+    @media all 
+    and (device-width: 1024px) 
+    and (device-height: 1366px)
+    and (orientation: portrait){
+
+      .navbar-main.navbar-main{
+        height: 50vh;
+      }
+      .about-me-header.about-me-header{
+        margin-top: 150px;
+      }
+      .about-me-right.about-me-right{
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-skills.main-skills{
+        padding: 150px;
+      }
+
+      .main-projects.main-projects{
+        display: block;
+        align-items: center;
+        height: 270vh;
+        padding: 30px 350px;
+      }
+
+      .card.card{
+        margin-top: 30px;
+      }
+    }
+
+    @media all 
+    and (device-width: 1024px) 
+    and (device-height: 1366px)
+    and (orientation: landscape){
+      .main-skills.main-skills{
+        padding: 220px;
+      }
+      .main-projects.main-projects{
+        padding: 80px;
+      }
+    }
