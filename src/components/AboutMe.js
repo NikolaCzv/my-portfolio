@@ -7,6 +7,7 @@ const Container = styled.div`
     display: flex;
     height: 50vh;
     width: 100%;
+    margin 0 auto;
     @media (max-width: 320px){
         display: block;
         width: 250%;
