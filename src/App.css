@@ -283,7 +283,8 @@
 
     @media all 
     and (device-width: 1024px) 
-    and (device-height: 768px) {
+    and (device-height: 768px)
+    and (orientation: landscape) {
 
       /* Navbar */
       .navbar-main.navbar-main{
@@ -328,6 +329,6 @@
         align-items: center;
         display: grid;
         justify-content: center;
-        height: 265vh;
+        height: 270vh;
       }
     }
