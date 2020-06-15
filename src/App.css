@@ -280,3 +280,54 @@
         height: 110vh;
       }
     }
+
+    @media all 
+    and (device-width: 1024px) 
+    and (device-height: 768px) {
+
+      /* Navbar */
+      .navbar-main.navbar-main{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        margin: 0px;
+      }
+      .navbar-left.navbar-left{
+        width: 100%;
+        padding: 50px;
+      }
+      .my-logo.my-logo{
+        width: 10%;
+      }
+
+      /* About me*/
+      .about-me-main.about-me-main{
+        display: flex;
+        height: 65vh;
+        margin: 0px;
+      }
+      .about-me-left.about-me-left{
+        width: 50%;
+      }
+      .about-me-right.about-me-right{
+        width: 50%;
+      }
+      /*Skills*/
+      .main-skills.main-skills{
+        width: 100%;
+        display: flex;
+        margin: 0px;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      /*Project*/
+      .main-projects.main-projects{
+        margin: 0px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        height: 265vh;
+      }
+    }
