@@ -29,7 +29,6 @@
     blink-caret .75s step-end infinite;
 }
 
-
 @media only screen {
       .write{
         font-size: 60%;
@@ -191,6 +190,7 @@
         }
       }
 
+      /*iphone 6+, 7+ and 8+*/
       @media only screen 
     and (device-width : 414px) 
     and (device-height : 736px){
@@ -205,5 +205,78 @@
       }
       .about-me-right.about-me-right{
         height: 60vh;
+      }
+    }
+
+    /* your css rules for ipad portrait */
+    @media all
+      and (device-width: 768px) 
+      and (device-height: 1024px) 
+      and (orientation:portrait) {
+
+        /*Navbar*/
+      .navbar-main.navbar-main{
+        display: flex;
+        height: 50vh;
+      }  
+      .navbar-left.navbar-left {
+        width: 65%;
+        padding: 50px;
+      }
+      .navbar-right.navbar-right{
+        width: 30%;
+      }
+      .my-logo.my-logo{
+        width: 10%;
+      }
+      /*About me*/
+      .about-me-main.about-me-main{
+        height: 60vh;
+      }
+
+      .about-me-header.about-me-header{
+        font-size: 26px;
+      }
+      .about-me-right.about-me-right{
+        justify-content: center;
+        align-items: center;
+      }
+      .my-photo.my-photo{
+        float: left;
+      }
+      /* Skills */
+      .main-skills.main-skills{
+        padding: 50px;
+      }
+      /* Projects */
+      .main-projects.main-projects{
+        display: grid;
+        height: 240vh;
+        justify-content: space-between;
+        padding: 225px;
+      }
+    }
+
+    /*iPad landscape*/
+    @media all 
+    and (device-width: 768px) 
+    and (device-height: 1024px) 
+    and (orientation: landscape){
+      /*Abot me*/
+      .about-me-main.about-me-main{
+        height: 80vh;
+      }
+      .about-me-header.about-me-header{
+        font-size: 35px;
+      }
+      /*Skills*/
+      .main-skills.main-skills{
+        padding: 150px;
+        height: 100vh;
+      }
+      /*Projects*/
+      .main-projects.main-projects{
+        padding: 10px;
+        height: 110vh;
       }
     }

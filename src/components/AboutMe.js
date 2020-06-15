@@ -72,7 +72,7 @@ const Header = styled.div`
 `
 
 const Text = styled.div`
-    font-size: 150%;
+    font-size: 130%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 1.5px;
     @media (max-width: 320px){

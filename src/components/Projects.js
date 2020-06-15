@@ -78,6 +78,7 @@ const ButtonWrapper = styled.div`
     align-items: center;
 `
 
+
 class Projects extends React.Component {
 
     render(){
@@ -89,7 +90,7 @@ class Projects extends React.Component {
                         <Divider />
                         <Image src={kanban} />
                         <TextWrapper>
-                            <h3>Description</h3>
+                            <h3>Project Description</h3>
                             <Divider />
                             Simple Kanban App, where users can create tasks and track the progress.
                             Ruby on rails on the back end, JavaScript and
@@ -120,7 +121,7 @@ class Projects extends React.Component {
                         <Divider />
                         <Image src={travelSmart} />
                         <TextWrapper>
-                            <h3>Description</h3>
+                            <h3>Project Description</h3>
                             <Divider />
                             Travel Smart App is made for people who like to travel.
                             You can post and share and experience at the same time you can book places from your friends.
@@ -152,7 +153,7 @@ class Projects extends React.Component {
                         <Divider />
                         <CoronaImage src={covid} width={70}/>
                         <TextWrapper>
-                            <h3>Description</h3>
+                            <h3>Project Description</h3>
                             <Divider />
                             This is a project done for a client.
                             It is made to collect the data from a patient about
