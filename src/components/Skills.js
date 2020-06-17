@@ -9,8 +9,8 @@ const Container = styled.div`
     width: 100%;
     height: 70vh;
     align-items: center;
-    justify-content: space-between;
-    padding: 400px;
+    justify-content: space-evenly;
+    padding: 0 auto;
     @media (max-width: 375px){
         display: block;
         margin-top: 580px;

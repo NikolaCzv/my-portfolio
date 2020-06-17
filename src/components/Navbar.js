@@ -43,7 +43,7 @@ const LeftContainer = styled.div`
     display: block;
     width: 50%;
     height: 100%;
-    font-size: 30px;
+    font-size: 29px;
     text-align: left;
     padding: 150px 50px;
     @media (max-width: 375px){

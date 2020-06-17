@@ -15,8 +15,8 @@ const Container = styled.div`
     height: 80vh;
     background-color: #65CAAB;
     align-items: center;
-    justify-content: space-between;
-    padding: 300px;
+    justify-content: space-evenly;
+    padding: 0 auto;
     @media (max-width: 375px){
         display: block;
         margin-top: 1000px;
