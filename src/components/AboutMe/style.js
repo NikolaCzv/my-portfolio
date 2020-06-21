@@ -1,9 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import myPhoto from "../assets/myPhoto.jpg";
-import { Divider } from "semantic-ui-react";
 
-const Container = styled.div`
+export const Container = styled.div`
     display: flex;
     height: 50vh;
     width: 100%;
@@ -24,7 +21,7 @@ const Container = styled.div`
     }
 `
 
-const LeftContainer = styled.div`
+export const LeftContainer = styled.div`
     display: block;
     float: left;
     width: 50%;
@@ -40,7 +37,7 @@ const LeftContainer = styled.div`
 }
 `
 
-const RightConatiner = styled.div`
+export const RightConatiner = styled.div`
     display: flex;
     float: right;
     width: 50%;
@@ -54,14 +51,14 @@ const RightConatiner = styled.div`
     }
 `
 
-const Image = styled.img`
+export const Image = styled.img`
     height: 100%;
     @media (max-width: 320px){
         width: 110%;
     }
 `
 
-const Header = styled.div`
+export const Header = styled.div`
     font-size: 300%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-color: #FFFFFF;
@@ -72,7 +69,7 @@ const Header = styled.div`
     }
 `
 
-const Text = styled.div`
+export const Text = styled.div`
     font-size: 130%;
     font-family: 'Helvetica', 'Arial', sans-serif;
     letter-spacing: 1.5px;
@@ -83,29 +80,3 @@ const Text = styled.div`
         padding: 10px;
     }
 `
-
-class AboutMe extends React.Component{
-    render(){
-        return(
-            <Container className="about-me-main">
-                <LeftContainer className="about-me-left">
-                    <Header className="about-me-header">Few things about me...</Header>
-                    < Divider hidden />
-                    < Divider hidden />
-                    < Divider hidden />
-                     <Text>
-                        I have experience in Ruby on Rails, Javascript, React.js, etc.
-                        Before my decision to become a software engineer I owned a small logistics business.
-                        I decided to become a software engineer because I wanted a new high point in my life.
-                        I consider myself as a hard worker and a team player.
-                    </Text>
-                </LeftContainer>
-                <RightConatiner className="about-me-right">
-                    <Image src={myPhoto} className="my-photo" />
-                </RightConatiner>
-            </Container>
-        )
-    }
-}
-
-export default AboutMe;
