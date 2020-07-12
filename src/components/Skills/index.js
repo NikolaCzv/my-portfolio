@@ -37,7 +37,7 @@ export default function Skills(){
                         <ul className="ul">
                             <li>HTML</li>
                             <li>JavaScript, ES5/6 </li>
-                            <li>React, Redux</li>
+                            <li>React, React Native, Redux</li>
                             <li>TypeScript</li>
                             <li>CSS, Semantic UI, Material UI, Bootstrap, Styled Components</li>
                         </ul>
