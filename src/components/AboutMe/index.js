@@ -19,10 +19,10 @@ export default function AbouMe(){
                     < Divider hidden />
                     < Divider hidden />
                      <Text>
-                        I have experience in Ruby on Rails, Javascript, React.js, etc.
-                        Before my decision to become a software engineer I owned a small logistics business.
-                        I decided to become a software engineer because I wanted a new high point in my life.
-                        I consider myself as a hard worker and a team player.
+                     Software Engineer with a passion for problem-solving.
+                     Coding has given me an outlet to be content sitting in front of a computer for several hours creating things.
+                     Previously self-employed, I am developing a new high point in my journey through code.
+                     Looking for an opportunity to deliver my tech skills with dedication as a hard-working team player. 
                     </Text>
                 </LeftContainer>
                 <RightConatiner className="about-me-right">
