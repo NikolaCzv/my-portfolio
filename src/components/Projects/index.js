@@ -93,7 +93,7 @@ export default function Projects(){
                         <h3>Project Description</h3>
                         <Divider />
                         Transfer Wind is a platform where soccer clubs and agents can connect with professional,
-                        semi-pro and amatuer, male or female soccer players from all over the world.
+                        semi-pro and amatuer soccer players from all over the world.
                     </TextWrapper>
                     <Divider />
                     <ButtonWrapper>
