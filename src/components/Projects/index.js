@@ -1,6 +1,6 @@
 import React from "react";
 import kanban from "../../assets/kanban.png";
-import covid from "../../assets/covid.png";
+import tw from "../../assets/tw.png";
 import travelSmart from "../../assets/travelSmart.png";
 import { 
     Divider,
@@ -86,24 +86,23 @@ export default function Projects(){
             </CardWrapper>
             <CardWrapper className="card">
                 <Card>
-                    <Header>Corona Report</Header>
+                    <Header>Transfer Wind</Header>
                     <Divider />
-                    <CoronaImage src={covid} width={70}/>
+                    <CoronaImage src={tw} width={70}/>
                     <TextWrapper>
                         <h3>Project Description</h3>
                         <Divider />
-                        This is a project done for a client.
-                        It is made to collect the data from a patient about
-                        COVID-19 and helps doctors to keep track of the patient's symptoms.
+                        Transfer Wind is a platform where soccer clubs and agents can connect with professional,
+                        semi-pro and amatuer, male or female soccer players from all over the world.
                     </TextWrapper>
                     <Divider />
                     <ButtonWrapper>
                     <Button
-                        color="black"
+                        color="twitter"
                         size="tiny"
-                        href="https://github.com/NikolaCzv/coronaApp">
-                        <Icon name="github" />
-                        Front End
+                        href="https://www.transferwind.com/">
+                        <Icon name="globe" />
+                        Visit
                     </Button>
                     </ButtonWrapper>
                 </Card>
