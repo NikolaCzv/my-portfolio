@@ -12,8 +12,8 @@ import {
 
 export default function Skills(){
     return(
-        <Container className="main-skills">
-            <CardWrapper className="card">
+        <Container>
+            <CardWrapper>
                 <Card>
                     <Header>Back End</Header>
                     <Divider />
@@ -27,14 +27,14 @@ export default function Skills(){
                         </ul>
                 </Card>
             </CardWrapper>
-            <CardWrapper className="card">
+            <CardWrapper>
                 <Card>
                     <Header>Front End</Header>
                     <Divider />
                     <Image src={react} />
                     <h3>Skills</h3>
                     <Divider />
-                        <ul className="ul">
+                        <ul>
                             <li>HTML</li>
                             <li>JavaScript, ES5/6 </li>
                             <li>React, React Native, Redux</li>

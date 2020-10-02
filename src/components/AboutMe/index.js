@@ -14,7 +14,7 @@ export default function AbouMe(){
         return(
             <Container className="about-me-main">
                 <LeftContainer className="about-me-left">
-                    <Header className="about-me-header">Few things about me...</Header>
+                    <Header className="about-me-header">A few things about me...</Header>
                     < Divider hidden />
                     < Divider hidden />
                     < Divider hidden />
@@ -25,8 +25,8 @@ export default function AbouMe(){
                      Looking for an opportunity to deliver my tech skills with dedication as a hard-working team player. 
                     </Text>
                 </LeftContainer>
-                <RightConatiner className="about-me-right">
-                    <Image src={myPhoto} className="my-photo" />
+                <RightConatiner>
+                    <Image src={myPhoto} />
                 </RightConatiner>
             </Container>
         );

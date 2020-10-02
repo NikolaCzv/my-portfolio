@@ -20,8 +20,8 @@ import {
 
 export default function Projects(){
     return(
-        <Container className="main-projects">
-            <CardWrapper className="card">
+        <Container>
+            <CardWrapper>
                 <Card>
                     <Header>Kanban App</Header>
                     <Divider />
@@ -52,7 +52,7 @@ export default function Projects(){
                         </ButtonWrapper>
                 </Card>
             </CardWrapper>
-            <CardWrapper className="card">
+            <CardWrapper>
                 <Card>
                     <Header>Travel Smart</Header>
                     <Divider />
@@ -84,7 +84,7 @@ export default function Projects(){
                     </TextWrapper>
                 </Card>
             </CardWrapper>
-            <CardWrapper className="card">
+            <CardWrapper>
                 <Card>
                     <Header>Transfer Wind</Header>
                     <Divider />

@@ -17,8 +17,8 @@ import {
 
 export default function Navbar(){
     return(
-        <Container className="navbar-main">
-            <LeftContainer className="navbar-left">
+        <Container>
+            <LeftContainer>
                 <Logo src={logo} className="my-logo" />
                 <Divider hidden />
                 <Divider hidden />
@@ -52,8 +52,8 @@ export default function Navbar(){
                 <Divider hidden />
                 <Divider hidden />
             </LeftContainer>
-            <RightContainer className="navbar-right">
-                <Image src={prog} className="hacker"/>
+            <RightContainer>
+                <Image src={prog}/>
             </RightContainer>
         </Container>
     );
