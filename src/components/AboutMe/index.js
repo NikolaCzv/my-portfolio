@@ -12,9 +12,9 @@ import {
 
 export default function AbouMe(){
         return(
-            <Container className="about-me-main">
-                <LeftContainer className="about-me-left">
-                    <Header className="about-me-header">A few things about me...</Header>
+            <Container>
+                <LeftContainer>
+                    <Header>A few things about me</Header>
                     < Divider hidden />
                     < Divider hidden />
                     < Divider hidden />
@@ -30,4 +30,4 @@ export default function AbouMe(){
                 </RightConatiner>
             </Container>
         );
-}
+};

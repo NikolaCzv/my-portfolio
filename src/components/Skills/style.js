@@ -23,8 +23,8 @@ export const CardWrapper = styled.div`
     transition: 0.3s;
     border-radius: 5px;
     border: 1px solid rgb(182, 187, 189);
-    width: 300px;
-    height: 500px;
+    width: 20vw;
+    height: 55vh;
 `;
 
 export const Card = styled.div`

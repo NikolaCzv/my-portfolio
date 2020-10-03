@@ -24,8 +24,8 @@ export const CardWrapper = styled.div`
     transition: 0.3s;
     border-radius: 5px;
     border: 1px solid rgb(182, 187, 189);
-    width: 320px;
-    height: 550px;
+    width: 20vw;
+    height: 60vh;
     background-color: #FFFFFF;
 `;
 
