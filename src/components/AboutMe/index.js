@@ -1,12 +1,10 @@
 import React from "react";
-import myPhoto from "../../assets/myPhoto.jpg";
 import myNewPhoto from "../../assets/myNewPhoto.jpg";
+
 import {
     Container,
     Image,
-    Text,
-    ClosingBtn,
-    BtnHolder
+    Text
 } from "./style";
 
 const AboutMe = () => {
