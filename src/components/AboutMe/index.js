@@ -10,7 +10,7 @@ import {
     Image
 } from "./style";
 
-export default function AbouMe(){
+const AboutMe = () => {
         return(
             <Container>
                 <LeftContainer>
@@ -31,3 +31,5 @@ export default function AbouMe(){
             </Container>
         );
 };
+
+export default AboutMe;

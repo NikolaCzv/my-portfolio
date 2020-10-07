@@ -1,77 +1,38 @@
 import styled from "styled-components";
+import { Button } from 'semantic-ui-react';
 
 export const Container = styled.div`
+    border-top: solid;
+    border-bottom: solid;
+    height: 20vh;
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    height: 80vh;
-    width:100%;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 100px; 
-    }
-` ;
-export const Image = styled.img`
-    width: 80%;
-    margin: 140px 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-color: white;
+    border-width: 1px;
 
     @media (max-width: 768px) {
         width: 100%;
-        margin: 0px;
-    }
+        height: 30vh;
+      }
 `;
 
-export const Logo = styled.img`
-    width: 7%;
-
-    @media (max-width: 768px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-    }
+export const Header = styled.h1`
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 `;
 
-export const LeftContainer = styled.div`
-    display: block;
-    width: 50%;
-    height: 100%;
-    font-size: 30px;
-    text-align: left;
-    padding: 150px 50px;
-
-    @media (max-width: 768px) {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50vh;
-        padding: 100px;
-        font-size: 24px;
-    }
+export const Descritpion = styled.p`
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 `;
-
-export const RightContainer = styled.div`
-    width: 50%;
-    height: 100%;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        padding: 50px;
-    }
-`;
+export const NavButton = styled(Button)``;
 
 export const ButtonWrapper = styled.div`
-    @media (max-width: 768px) {
-        display: grid;
-        grid-gap: 10px;
-    }
-`;
+      display: flex;
+      flex-direction: row;
+`; 
+
+

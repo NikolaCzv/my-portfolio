@@ -1,19 +1,18 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import AboutMe from "../components/AboutMe";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
 import styled from "styled-components";
+import mountains4k from "../assets/mountains4k.jpg";
+import moon from "../assets/moon.jpg";
+import Navbar from "../components/Navbar";
 
 const Container = styled.div`
-    display: block;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(${mountains4k});
+    background-size: cover;
+    padding: 50px;
 `;
 
 class Dashboard extends React.Component{
@@ -21,9 +20,6 @@ class Dashboard extends React.Component{
         return(
             <Container>
                 <Navbar />
-                <AboutMe />
-                <Skills />
-                <Projects />
             </Container>
         )
     }
