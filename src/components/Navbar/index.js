@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AboutMe from "../AboutMe";
-
+import { Divider } from 'semantic-ui-react';
 
 import {
     Container,
@@ -12,18 +12,21 @@ import {
 
 const Navbar = () => {
     const [isAbout, setIsAbout] = useState(false);
+
+    const handleAbout = () => setIsAbout(true);
     
     if(isAbout)
         return <AboutMe setIsAbout={setIsAbout}/>
 
     return  <Container>
                 <Header>Nikola Raicic</Header>
+                <Divider hidden />
                 <Descritpion>Software Developer</Descritpion>
                 <ButtonWrapper>
                     <NavButton 
                         inverted
                         color="white"
-                        onClick={() => setIsAbout(true)}> 
+                        onClick={handleAbout}> 
                         About 
                     </NavButton>
 

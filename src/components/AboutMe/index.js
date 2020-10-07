@@ -9,9 +9,11 @@ import {
 } from "./style";
 
 const AboutMe = props => {
+        const handleCloseBtn = () => props.setIsAbout(false);
+
         return(
             <Container>
-                <CloseBtn onClick={() => props.setIsAbout(false)}>
+                <CloseBtn onClick={handleCloseBtn}>
                     X
                 </CloseBtn>
                 <Image src={myNewPhoto} />
