@@ -1,61 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    height: 35vh;
+    width: 35%;
     display: flex;
-    width: 100%;
-    height: 80vh;
-    background-color: #65CAAB;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 0 auto;
+    padding: 30px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    background-color: white;
+    height: 80vh;
+    border-radius: 5px;
+
 
     @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         width: 100%;
-        height: 240vh;
-    }
-`;
-
-export const CardWrapper = styled.div`
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
-    transition: 0.3s;
-    border-radius: 5px;
-    border: 1px solid rgb(182, 187, 189);
-    width: 20vw;
-    height: 60vh;
-    background-color: #FFFFFF;
-`;
-
-export const Card = styled.div`
-    padding: 2px 16px;
-    height: 120%;
-`;
-
-export const Image = styled.img`
-      width: 100%;
-      height: 30%;
-`;
-
-export const CoronaImage = styled.img`
-      width: 70%;
-      height: 30%;
-      margin-left: 40px;
-`;
-
-export const Header = styled.h1`
-      color: #6495ED;
-`;
-
-export const TextWrapper = styled.div`
-    width: 100%;
-    padding: 30px;
-`;
-
-export const ButtonWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      }
 `;

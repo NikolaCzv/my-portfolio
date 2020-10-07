@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from 'semantic-ui-react';
+import { colors } from "../../utils/colors";
 
 export const Container = styled.div`
     border-top: solid;
@@ -10,7 +11,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    border-color: white;
+    border-color: ${colors.white};
     border-width: 1px;
 
     @media (max-width: 768px) {
@@ -20,12 +21,12 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.h1`
-    color: white;
+    color: ${colors.white};
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 `;
 
 export const Descritpion = styled.p`
-    color: white;
+    color: ${colors.white};
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 `;
 export const NavButton = styled(Button)``;

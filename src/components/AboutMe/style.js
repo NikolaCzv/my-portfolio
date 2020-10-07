@@ -1,91 +1,43 @@
 import styled from "styled-components";
+import { colors } from "../../utils/colors";
 
 export const Container = styled.div`
+    height: 35vh;
+    width: 35%;
     display: flex;
-    flex-direction: row;
-    height: 50vh;
-    width: 100%;
-    margin 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid;
+    border-color: ${colors.white};
+    border-width: 1px;
+    background-color: ${colors.white};
+    border-radius: 5px;
+    height: 80vh;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     @media (max-width: 768px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-
-    }
-`;
-
-export const LeftContainer = styled.div`
-    display: block;
-    float: left;
-    width: 50%;
-    height: 45vh;
-    background-color: #65CAAB;
-    color: #FFFFFF;
-    text-align: left;
-    padding: 90px 50px;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 60vh;
-        padding: 100px;
-    }
-}
-`;
-
-export const RightConatiner = styled.div`
-    display: flex;
-    float: right;
-    width: 50%;
-    height: 45vh;
-    background-color: #000000;
-    padding: 0px 200px;
-
-    @media (max-width: 768px) {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 60vh;
-        padding: 0px;
-    }
+        padding: 10px;
+      }
 `;
 
 export const Image = styled.img`
-    height: 100%;
-
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
     @media (max-width: 768px) {
-        height: 100%;
-    }
-`;
-
-export const Header = styled.div`
-    font-size: 42px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-color: #FFFFFF;
-    margin-top: 60px;
-
-    @media (max-width: 768px) {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-size: 36px;
-    }
+        height: 55%;
+      }
 `;
 
 export const Text = styled.div`
-    font-size: 16px;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    letter-spacing: 1.5px;
-
-    @media (max-width: 768px) {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-size: 14px;
-    }
+      font-size: 16px;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      width: 90%;
+      @media (max-width: 768px) {
+        font-size: 12px;
+        height: 90%;
+      }
 `;

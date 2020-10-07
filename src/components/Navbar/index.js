@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import AboutMe from "../AboutMe";
 
 import {
     Container,
@@ -9,11 +10,22 @@ import {
 } from "./style";
 
 const Navbar = () => {
+    const [isAbout, setIsAbout] = useState(false);
+    
+    if(isAbout)
+        return <AboutMe />
+
     return  <Container>
                 <Header>Nikola Raicic</Header>
                 <Descritpion>Software Developer</Descritpion>
                 <ButtonWrapper>
-                    <NavButton inverted color="white"> About </NavButton>
+                    <NavButton 
+                        inverted
+                        color="white"
+                        onClick={() => setIsAbout(true)}> 
+                        About 
+                    </NavButton>
+
                     <NavButton inverted color="white"> Skills </NavButton>
                     <NavButton inverted color="white"> Projects </NavButton>
                     <NavButton inverted color="white"> Contact </NavButton>

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import mountains4k from "../assets/mountains4k.jpg";
-import moon from "../assets/moon.jpg";
 import Navbar from "../components/Navbar";
 
 const Container = styled.div`
@@ -15,15 +14,13 @@ const Container = styled.div`
     padding: 50px;
 `;
 
-class Dashboard extends React.Component{
-    render(){
-        return(
-            <Container>
-                <Navbar />
-            </Container>
-        )
-    }
+const Dashboard = () => {
 
-}
+    return(
+        <Container>
+            <Navbar />
+        </Container>
+    );
+};
 
 export default Dashboard;
