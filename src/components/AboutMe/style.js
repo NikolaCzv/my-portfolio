@@ -2,24 +2,22 @@ import styled from "styled-components";
 import { colors } from "../../utils/colors";
 
 export const Container = styled.div`
-    height: 35vh;
+    height: 90vh;
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     border: solid;
     border-color: ${colors.white};
     border-width: 1px;
     background-color: ${colors.white};
     border-radius: 5px;
-    height: 80vh;
     justify-content: space-evenly;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     @media (max-width: 768px) {
         width: 100%;
-        padding: 10px;
+        padding-top: 20px;
       }
 `;
 
@@ -29,6 +27,7 @@ export const Image = styled.img`
     border-radius: 5px;
     @media (max-width: 768px) {
         height: 55%;
+        margin-bottom: 15px;
       }
 `;
 
@@ -40,4 +39,18 @@ export const Text = styled.div`
         font-size: 12px;
         height: 90%;
       }
+`;
+
+export const CloseBtn = styled.div`
+    width: 30vw;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    @media (max-width: 768px) {
+        font-size: 12px;
+        width: 65vw;
+        margin-bottom: 15px;
+    }
 `;

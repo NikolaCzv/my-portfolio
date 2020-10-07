@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AboutMe from "../AboutMe";
 
+
 import {
     Container,
     Header,
@@ -13,7 +14,7 @@ const Navbar = () => {
     const [isAbout, setIsAbout] = useState(false);
     
     if(isAbout)
-        return <AboutMe />
+        return <AboutMe setIsAbout={setIsAbout}/>
 
     return  <Container>
                 <Header>Nikola Raicic</Header>

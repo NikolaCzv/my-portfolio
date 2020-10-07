@@ -4,12 +4,16 @@ import myNewPhoto from "../../assets/myNewPhoto.jpg";
 import {
     Container,
     Image,
-    Text
+    Text,
+    CloseBtn
 } from "./style";
 
-const AboutMe = () => {
+const AboutMe = props => {
         return(
             <Container>
+                <CloseBtn onClick={() => props.setIsAbout(false)}>
+                    X
+                </CloseBtn>
                 <Image src={myNewPhoto} />
                 <Text>
                     Software Engineer with a passion for problem-solving.
