@@ -3,7 +3,7 @@ import { colors } from "../../utils/colors";
 import { Button } from 'semantic-ui-react';
 
 export const Container = styled.div`
-    height: 60vh;
+    height: 70vh;
     width: 35%;
     display: flex;
     flex-direction: column;
