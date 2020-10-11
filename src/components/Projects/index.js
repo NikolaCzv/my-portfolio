@@ -1,112 +1,38 @@
 import React from "react";
-import kanban from "../../assets/kanban.png";
-import tw from "../../assets/tw.png";
-import travelSmart from "../../assets/travelSmart.png";
-import { 
-    Divider,
-    Button,
-    Icon
- } from "semantic-ui-react";
- import {
-     Header,
-     Card,
-     CardWrapper,
-     Image,
-     Container,
-     TextWrapper,
-     ButtonWrapper,
-     CoronaImage
- } from "./style";
+import twscreen from "../../assets/twscreen.png";
 
-export default function Projects(){
+import {
+    Container,
+    CloseBtn,
+    Image,
+    Header,
+    Text,
+    Title
+} from "./style";
+
+const Projects = props => {
+    const handleCloseBtn = () => props.setIsProjects(false);
+
+
     return(
         <Container>
-            <CardWrapper>
-                <Card>
-                    <Header>Kanban App</Header>
-                    <Divider />
-                    <Image src={kanban} />
-                    <TextWrapper>
-                        <h3>Project Description</h3>
-                        <Divider />
-                        Simple Kanban App, where users can create tasks and track the progress.
-                        Ruby on rails on the back end, JavaScript and
-                        Redux (thunk) on the front end.
-                    </TextWrapper>
-                    <Divider />
-                    <ButtonWrapper className="project-btns">
-                        <Button
-                            color="black"
-                            size="tiny"
-                            href="https://github.com/NikolaCzv/frontendKanban">
-                                <Icon name="github" />
-                                Front End
-                        </Button>
-                        <Button
-                            color="black"
-                            size="tiny"
-                            href="https://github.com/NikolaCzv/backendKanban">
-                                <Icon name="github" />
-                                Back End
-                        </Button>
-                        </ButtonWrapper>
-                </Card>
-            </CardWrapper>
-            <CardWrapper>
-                <Card>
-                    <Header>Travel Smart</Header>
-                    <Divider />
-                    <Image src={travelSmart} />
-                    <TextWrapper>
-                        <h3>Project Description</h3>
-                        <Divider />
-                        Travel Smart App is made for people who like to travel.
-                        You can post and share and experience at the same time you can book places from your friends.
-                        <Divider hidden/>
-                        <Divider hidden />
-                        <Divider />
-                        <ButtonWrapper>
-                        <Button
-                            color="black"
-                            size="tiny"
-                            href="https://github.com/NikolaCzv/frontendMyApp">
-                                <Icon name="github" />
-                                Front End
-                        </Button>
-                        <Button
-                            color="black"
-                            size="tiny"
-                            href="https://github.com/NikolaCzv/backendMyApp">
-                                <Icon name="github" />
-                                Back End
-                        </Button>
-                        </ButtonWrapper>
-                    </TextWrapper>
-                </Card>
-            </CardWrapper>
-            <CardWrapper>
-                <Card>
-                    <Header>Transfer Wind</Header>
-                    <Divider />
-                    <CoronaImage src={tw} width={70}/>
-                    <TextWrapper>
-                        <h3>Project Description</h3>
-                        <Divider />
-                        Transfer Wind is a platform where soccer clubs and agents can connect with professional,
-                        semi-pro and amatuer soccer players from all over the world.
-                    </TextWrapper>
-                    <Divider />
-                    <ButtonWrapper>
-                    <Button
-                        color="twitter"
-                        size="tiny"
-                        href="https://www.transferwind.com/">
-                        <Icon name="globe" />
-                        Visit
-                    </Button>
-                    </ButtonWrapper>
-                </Card>
-            </CardWrapper>
+            <CloseBtn onClick={handleCloseBtn}>X</CloseBtn>
+            <Header>My Work</Header>
+            <Image src={twscreen} />
+            <Title>TransferWind</Title>
+            <Text>
+                While I was working for SavkeVip as a front end developer.
+                I was colaborating with other developers, designers and team members. 
+                Developing front end code for web and mobile, using React, React Natvie, Gatsby
+                and Styled Components.
+            </Text>
+            <Text>
+                TransferWind is a platform where soccer clubs and agents
+                can connect with professional, semi-pro and amatuer,
+                male or female soccer players from all over the world.
+            </Text>
         </Container>
     );
-}
+};
+
+export default Projects;
