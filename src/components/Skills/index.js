@@ -1,48 +1,44 @@
 import React from "react";
 import ruby from "../../assets/ruby.png";
 import react from "../../assets/react.png";
-import { Divider } from "semantic-ui-react";
 import {
     Container,
-    CardWrapper,
-    Card,
+    CloseBtn,
     Header,
-    Image
+    Image,
+    Text,
+    Title
 } from "./style";
 
-export default function Skills(){
+const Skills = props => {
+    const handleCloseBtn = () => props.setIsSkills(false);
+
     return(
         <Container>
-            <CardWrapper>
-                <Card>
-                    <Header>Back End</Header>
-                    <Divider />
-                    <Image src={ruby} />
-                    <h3>Skills</h3>
-                    <Divider />
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>Active Records</li>
-                            <li>SQL, PostgreSQL</li>
-                        </ul>
-                </Card>
-            </CardWrapper>
-            <CardWrapper>
-                <Card>
-                    <Header>Front End</Header>
-                    <Divider />
-                    <Image src={react} />
-                    <h3>Skills</h3>
-                    <Divider />
-                        <ul>
-                            <li>HTML</li>
-                            <li>JavaScript, ES5/6 </li>
-                            <li>React, React Native, Redux</li>
-                            <li>TypeScript</li>
-                            <li>CSS, Semantic UI, Material UI, Bootstrap, Styled Components</li>
-                        </ul>
-                </Card>
-            </CardWrapper>
+            <CloseBtn onClick={handleCloseBtn}>X</CloseBtn>
+            <Header>Skills</Header>
+            <Image src={react}/>
+            <Title>Front End</Title>
+            <Text>
+                <ul>
+                    <li>HTML</li>
+                    <li>JavaScript, ES5/6 </li>
+                    <li>React, React-Native, Redux, Gatsby</li>
+                    <li>TypeScript</li>
+                    <li>CSS, Styled Components</li>
+                </ul>
+            </Text>
+            <Image src={ruby} />
+            <Title>Back End</Title>
+            <Text>
+                <ul>
+                    <li>Ruby on Rails</li>
+                    <li>Active Records</li>
+                    <li>SQL, PostgreSQL</li>
+                </ul>
+            </Text>
         </Container>
     );
 }
+
+export default Skills;

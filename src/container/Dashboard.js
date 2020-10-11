@@ -12,6 +12,9 @@ const Container = styled.div`
     background-image: url(${mountains4k});
     background-size: cover;
     padding: 50px;
+    @media (max-width: 768px){
+        padding: 30px;
+    }
 `;
 
 const Dashboard = () => {

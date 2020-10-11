@@ -15,6 +15,24 @@ export const Container = styled.div`
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+    background: #FFFAFA;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #87CEEB;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #4682B4;
+    }
+
     @media (max-width: 768px) {
         width: 100%;
         padding-top: 20px;
@@ -31,14 +49,13 @@ export const CloseBtn = styled.div`
     margin: 10px;
     @media (max-width: 768px) {
         font-size: 12px;
-        width: 65vw;
-        margin-bottom: 15px;
+        width: 75vw;
     }
 `;
 
 export const Image = styled.img`
     width: 90%;
-    height: 50%;
+    height: 35%;
     border-radius: 5px;
     margin: 10px;
     @media (max-width: 768px) {
@@ -78,4 +95,14 @@ export const Title = styled.div`
   @media (max-width: 768px) {
     font-size: 22px;
   }
-`
+`;
+
+export const Span = styled.span`
+  font-size: 16px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #DC143C;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+`;

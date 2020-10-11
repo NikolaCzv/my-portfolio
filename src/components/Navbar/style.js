@@ -37,7 +37,13 @@ export const Descritpion = styled.p`
         font-size: 20px;
       }
 `;
-export const NavButton = styled(Button)``;
+export const NavButton = styled(Button)`
+  width: 8vw;
+  @media (max-width: 768px) {
+    width: 23vw;
+    height: 6vh;
+  }
+`;
 
 export const ButtonWrapper = styled.div`
       display: flex;
