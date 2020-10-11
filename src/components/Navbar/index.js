@@ -20,7 +20,7 @@ const Navbar = () => {
     const handleProjects = () => setIsProjects(true);
     
     if(isAbout)
-        return <AboutMe setIsAbout={setIsAbout}/>
+        return <AboutMe setIsAbout={setIsAbout} setIsProjects={setIsProjects}/>
     if(isProjects)
         return <Projects setIsProjects={setIsProjects}/>
 

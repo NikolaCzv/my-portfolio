@@ -5,7 +5,7 @@ import { colors } from "../../utils/colors";
 export const Container = styled.div`
     border-top: solid;
     border-bottom: solid;
-    height: 25vh;
+    height: 30vh;
     width: 50%;
     display: flex;
     flex-direction: column;

@@ -54,3 +54,13 @@ export const CloseBtn = styled.div`
         margin-bottom: 15px;
     }
 `;
+
+export const Span = styled.span`
+  font-size: 16px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #DC143C;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+`

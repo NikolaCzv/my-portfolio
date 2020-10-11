@@ -5,11 +5,17 @@ import {
     Container,
     Image,
     Text,
-    CloseBtn
+    CloseBtn,
+    Span
 } from "./style";
 
 const AboutMe = props => {
         const handleCloseBtn = () => props.setIsAbout(false);
+
+        const handleHereBtn = () => {
+            props.setIsAbout(false);
+            props.setIsProjects(true);
+        };
 
         return(
             <Container>
@@ -22,7 +28,7 @@ const AboutMe = props => {
                     Coding has given me an outlet to be content sitting in front of a computer for several hours creating things.
                     Previously self-employed, I am developing a new high point in my journey through code.
                     Looking for an opportunity to deliver my tech skills with dedication as a hard-working team player.
-                    You check my work here.
+                    You check my work <Span onClick={handleHereBtn}>here.</Span>
                 </Text>
             </Container>
         );

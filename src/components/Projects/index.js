@@ -13,7 +13,6 @@ import {
 const Projects = props => {
     const handleCloseBtn = () => props.setIsProjects(false);
 
-
     return(
         <Container>
             <CloseBtn onClick={handleCloseBtn}>X</CloseBtn>
