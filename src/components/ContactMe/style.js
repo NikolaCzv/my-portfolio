@@ -84,8 +84,6 @@ export const EmailLabel = styled.label`
 
 export const ButtonWrapper = styled.div`
   margin: 10px;
-  justify-content: space-evenly;
-  display: flex;
 `;
 
 export const NavButton = styled(Button)`

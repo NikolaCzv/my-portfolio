@@ -36,7 +36,6 @@ const ContactMe = props => {
                     <EmailTextArea type="text" name="content" rows="4" cols="50"/>
                     <ButtonWrapper>
                         <NavButton inverted color="blue" type="submit">Submit</NavButton>
-                        <NavButton inverted color="red" type="reset">Reset</NavButton>
                     </ButtonWrapper>
                 </EmailForm>
                 <CircularButtonWrapper>
