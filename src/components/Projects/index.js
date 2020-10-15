@@ -1,7 +1,7 @@
 import React from "react";
 import twscreen from "../../assets/twscreen.png";
 import travelSmart from "../../assets/travelSmart.png";
-import kanban from "../../assets/kanban.png";
+import karm from "../../assets/karm.png";
 
 import {
     Container,
@@ -20,7 +20,7 @@ const Projects = props => {
 
     const handleTravelSmart = () => window.open("https://github.com/NikolaCzv/frontendMyApp", "_blank");
 
-    const handleKanban = () => window.open("https://github.com/NikolaCzv/frontendKanban", "_blank");
+    const handleKarm = () => window.open("https://www.karm.co", "_blank");
 
     return(
         <Container>
@@ -40,7 +40,16 @@ const Projects = props => {
                 can connect with professional, semi-pro and amatuer,
                 male or female soccer players from all over the world.
             </Text>
-
+            <Image src={karm}/>
+            <Title>Karm</Title>
+            <Text>
+                <Span onClick={handleKarm}>Karm</Span> {" "}
+                is a COVID platform that offers a prevention for people
+                to avoid COVID-19 risk by reviewing their experiences after
+                visiting restaurants. Helps to make safer decisions by providing
+                real-time data on businesses, the safety measures they’ve
+                implemented, and how well those measures are being enforced.
+            </Text> 
             <Image src={travelSmart} />
             <Title>TravelSmart</Title>
             <Text>
@@ -59,14 +68,6 @@ const Projects = props => {
                 Also, while they are away,they can share experiance while posting pictures,
                 see posts from their folowers.
             </Text>
-            <Image src={kanban}/>
-            <Title>KanbanApp</Title>
-            <Text>
-                <Span onClick={handleKanban}>KanbanApp</Span> {" "}
-                is a post school project that I have done to make sure my skills stay sharp.
-                It is a kanban that would help users organize their time and keep a track of the
-                tasks they have. Here I was using React, Redux, and Ruby on Rails.
-            </Text> 
         </Container>
     );
 };
