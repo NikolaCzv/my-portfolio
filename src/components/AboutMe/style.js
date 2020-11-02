@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
+import { fontFamily } from "../../utils/fontFamily";
 
 export const Container = styled.div`
     height: 90vh;
@@ -19,6 +20,11 @@ export const Container = styled.div`
       display: none;
     }
 
+    @media (max-width: 1440px){
+      width: 35vw;
+      height: 95vh;
+    }
+
     @media (max-width: 768px) {
         width: 100%;
       }
@@ -29,6 +35,10 @@ export const Image = styled.img`
     height: 70%;
     border-radius: 5px;
     margin: 10px;
+    @media (max-width: 1440px){
+      height: 65%;
+      margin: 10px 10px 20px 10px;
+    }
     @media (max-width: 768px) {
         height: 55%;
       }
@@ -36,10 +46,10 @@ export const Image = styled.img`
 
 export const Text = styled.div`
       font-size: 16px;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-family: ${fontFamily.main};
       width: 90%;
       @media (max-width: 768px) {
-        font-size: 12px;
+        font-size: 14px;
         height: 90%;
       }
 `;
@@ -60,11 +70,11 @@ export const CloseBtn = styled.div`
 
 export const Span = styled.span`
   font-size: 16px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  color: #DC143C;
+  font-family: ${fontFamily.main};
+  color: ${colors.link};
   cursor: pointer;
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
@@ -72,7 +82,7 @@ export const Header = styled.div`
   width: 90%;
   margin: 15px;
   font-size: 36px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: ${fontFamily.main};
   @media (max-width: 768px) {
     font-size: 32px;
   }

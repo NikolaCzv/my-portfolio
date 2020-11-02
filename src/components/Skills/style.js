@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
+import { fontFamily } from "../../utils/fontFamily";
 
 export const Container = styled.div`
     height: 90vh;
@@ -32,6 +33,10 @@ export const Container = styled.div`
       ::-webkit-scrollbar-thumb:hover {
       background: #4682B4;
       }
+    @media (max-width: 1440px){
+      width: 35vw;
+      height: 95vh;
+    }
 
     @media (max-width: 768px) {
         width: 100%;
@@ -67,7 +72,7 @@ export const Header = styled.div`
   width: 90%;
   margin: 15px;
   font-size: 36px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: ${fontFamily.main};
   @media (max-width: 768px) {
     font-size: 32px;
   }
@@ -76,7 +81,7 @@ export const Header = styled.div`
 export const Text = styled.div`
       font-size: 16px;
       margin: 10px;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-family: ${fontFamily.main};
       width: 90%;
       @media (max-width: 768px) {
         font-size: 12px;
@@ -85,7 +90,7 @@ export const Text = styled.div`
 `;
 
 export const Title = styled.div`
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;  
+  font-family: ${fontFamily.main}; 
   width: 90%;
   margin: 15px;
   font-size: 28px;

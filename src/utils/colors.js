@@ -1,3 +1,4 @@
 export const colors = {
-    white: "#FFFFFF"
+    white: "#FFFFFF",
+    link: "#DC143C"
 };

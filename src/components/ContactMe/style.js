@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
 import { Button } from 'semantic-ui-react';
+import { fontFamily } from "../../utils/fontFamily";
 
 export const Container = styled.div`
     height: 73vh;
@@ -18,6 +19,11 @@ export const Container = styled.div`
 
     ::-webkit-scrollbar {
       display: none;
+    }
+
+    @media (max-width: 1440px){
+      width: 35vw;
+      height: 65vh;
     }
 
     @media (max-width: 768px) {
@@ -44,13 +50,14 @@ export const Header = styled.div`
   width: 90%;
   margin: 15px;
   font-size: 36px;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: ${fontFamily.main};
   @media (max-width: 768px) {
     font-size: 32px;
   }
 `;
 
 export const EmailForm = styled.form`
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +85,7 @@ export const EmailTextArea = styled.textarea`
 
 export const EmailLabel = styled.label`
     font-size: 20px;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: ${fontFamily.main};
     margin: 10px;
 `;
 
