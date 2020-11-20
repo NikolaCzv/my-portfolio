@@ -1,5 +1,5 @@
 import React from "react";
-import myNewPhoto from "../../assets/myNewPhoto.jpg";
+import myPhoto from "../../assets/myPhoto.jpg";
 
 import {
     Container,
@@ -24,7 +24,7 @@ const AboutMe = props => {
                     X
                 </CloseBtn>
                 <Header>About Me</Header>
-                <Image src={myNewPhoto} />
+                <Image src={myPhoto} />
                 <Text>
                     Software Engineer with a passion for problem-solving.
                     Coding has given me an outlet to be content sitting in front of a computer for several hours creating things.
